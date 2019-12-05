@@ -1,4 +1,4 @@
-questions = [
+[
   {
     "question": "What is an Intent?",
     "answer": "An intent is a messagin object used to ransfer data from one activity, fragment, to another. It can be implicit or explicit"
