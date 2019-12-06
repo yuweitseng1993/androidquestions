@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What would you support a language written from right to left in your layouts?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What do big companies do to manage device rotation in their apps when showing a list?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What are fragments?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What are cardviews?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is Material Design?",
+    "answer": "dummy"
+  },
+  {
+    "question": "How would you implement an animation on a cardview?",
+    "answer": "dummy"
+  },
+  {
+    "question": "How would you implement support for different languages?",
+    "answer": "dummy"
+  },
+  {
+    "question": "How would you implement text with hyphens when too large the content on a textview?",
+    "answer": "dummy"
+  },
+  {
+    "question": "How would you implmenet in a layout text that have bold parts and several icons?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What are the differences between the ListViewand the RecyclerView?",
+    "answer": "dummy"
+  },
+]
