@@ -6,5 +6,9 @@
   {
     "question": "What are Services?",
     "answer": "A Service is an applicaiton component that can perform long-running operation in the background, and it doesn't provide a user interface. Another application component can start a service, and it continues to run in the background even if the user switches to another application."
+  },
+  {
+    "question": "Android Components",
+    "answer": "Activities\n\twhat program use to interact with the user\n\tinitialize with \"onCreate\"\nServices\n\tbackground process\n\tno user interface"
   }
 ]
