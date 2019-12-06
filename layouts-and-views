@@ -1,0 +1,78 @@
+[
+  {
+    "question": "What is a ViewGroup?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is a View?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is a LinearLayout?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is a CoordinateLayout?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is an adapter?",
+    "answer": "dummy"
+  },
+  {
+    "question": "How can you use an Recycler Listener?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the calendarView.ondatechangelistener?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the mediacontroller.mediaplayercontrol?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the number picker formatter?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the NumberPicker.onvaluechangelistener?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the AbsoluteLayout?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the difference between datepicker and calendarview?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the RelativeLayout?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the TableLayout?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the View that allows you to select a specific time of the day?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the FrameLayout?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the Spinner?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the difference between PopupMenu and PopupWindow?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What is the difference between Actionbar and Toolbar?",
+    "answer": "dummy"
+  }
+]
