@@ -9,6 +9,6 @@
   },
   {
     "question": "Android Components",
-    "answer": "Activities\n\twhat program use to interact with the user\n\tinitialize with \"onCreate\"\nServices\n\tbackground process\n\tno user interface"
+    "answer": "Activities\n\t\t- what program use to interact with the user\n\t\t- initialize with \"onCreate\"\nServices\n\t\t- background process\n\t\t- no user interface"
   }
 ]
