@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What is a bound service?",
+    "answer": "dummy"
+  },
+  {
+    "question": "When would you use an intent service?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What thread does a regular service run on?",
+    "answer": "dummy"
+  }
+]
