@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What is a worker thread?",
+    "answer": "dummy"
+  },
+  {
+    "question": "Why Asynctask is not used now?",
+    "answer": "dummy"
+  },
+  {
+    "question": "Any other alternatives to create a background thread?",
+    "answer": "dummy"
+  },
+  {
+    "question": "How do you migrate from an AsyncTask to an Observabe in RxJava?",
+    "answer": "dummy"
+  },
+  {
+    "question": "What multithreading frameworkds do we have on Adnrodi? When would you use each?",
+    "answer": "dummy"
+  },
+  {
+    "question": "How is the lifecycle of an Activity related to an AsyncTask?",
+    "answer": "dummy"
+  }
+]
