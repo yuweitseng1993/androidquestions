@@ -10,5 +10,11 @@
   {
     "question": "Android Components",
     "answer": "Activities\n\t\t- what program use to interact with the user\n\t\t- initialize with \"onCreate\"\nServices\n\t\t- background process\n\t\t- no user interface"
+    "add_on": [
+      {
+        "term": "Add on term"
+        "meaning": "Add on meaning"
+      }
+    ]
   }
 ]
