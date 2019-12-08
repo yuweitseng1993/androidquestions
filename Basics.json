@@ -1,0 +1,116 @@
+[
+  {
+    "question": "What are Android Components?",
+    "answer": "Activities\nServices\nContent Providers\nBroadcast Receivers",
+    "terminologies": [
+      {
+        "term": "Activities",
+        "meaning": "Use by the program to interact with the user."
+      },
+      {
+        "term": "Services",
+        "meaning": "A componenet which runs in the background without direct interaction with the user. As the service has no user interface, it is not bound to the lifecycle of an activity."
+      },
+      {
+        "term": "Content Providers",
+        "meaning": "Can provide data to other applications or components. A provider must be decared in the manifest file for hte application. Consumers access the dat provided via URI's. A provider allows applications to access data. "
+      },
+      {
+        "term": "Broadcast Receivers",
+        "meaning": "Android componenet which allows you to register for system or application events. All registered receivers for an event are notified by the Android runtime once this event happens."
+      }
+    ]
+  },
+  {
+    "question": "What are Activity Lifecycles, when are they triggered?",
+    "answer": "onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy(), onRestart()",
+    "termiologies": [
+      {
+        "term": "onCreate()",
+        "meaning": "When the view is first created.\nWhere we create views, get data from bundles, etc."
+      },
+      {
+        "term": "onStart()",
+        "meaning": "When the activity is becoming visible to the user. Followed by onResume() if the activity comes to the foreground, or onStop() if it becomes hidden."
+      },
+      {
+        "term": "onResume()",
+        "meaning": "When the activity will start interacting with the user. At this poitn your activity is at the top of the activity stack, with user input going to it."
+      },
+      {
+        "term": "onPause()",
+        "meaning": "When an activity is going into the background, but has not (yet) been killed."
+      },
+      {
+        "term": "onStop()",
+        "meaning": "When app is no longer visible to the user."
+      },
+      {
+        "term": "onDestroy()",
+        "meaning": "When the activity is finishing."
+      },
+      {
+        "term": "onRestart()",
+        "meaning": "Called after your activity has been stopped, prior to it being started again."
+      }
+    ],
+    "associated_questions": [
+      {
+        "related_question": "What is the difference between onCreate() and onStart()?"
+        "related_answer": "onCreate() is called once during the Activity lifecycle, onStart() is called whenever the Activity becomes visible to the user."
+      }
+    ]
+  },
+  {
+    "question": "What is AndroidManifest?",
+    "answer": ""
+  },
+  {
+    "question": "What is a Context?",
+    "answer": ""
+  },
+  {
+    "question": "What is an Intent?",
+    "answer": ""
+  },
+  {
+    "question": "What are Fragments?",
+    "answer": ""
+  },
+  {
+    "question": "What are Dialogs?",
+    "answer": ""
+  },
+  {
+    "question": "What are the Launch Modes in Android?",
+    "answer": ""
+  },
+  {
+    "question": "What is Configuration Change?",
+    "answer": ""
+  },
+  {
+    "question": "What are Android Design Patterns?",
+    "answer": ""
+  },
+  {
+    "question": "What are Flavors?",
+    "answer": ""
+  },
+  {
+    "question": "What is ProGuard used for?",
+    "answer": ""
+  },
+  {
+    "question": "What is ANR?",
+    "answer": ""
+  },
+  {
+    "question": "What is the Android build process?",
+    "answer": ""
+  },
+  {
+    "question": "What is an Activity Stack, how is it managed?",
+    "answer": ""
+  }
+]
