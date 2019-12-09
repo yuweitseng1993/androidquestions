@@ -63,54 +63,184 @@
   },
   {
     "question": "What is AndroidManifest?",
-    "answer": ""
+    "answer": "The manifest consist of all the information that helps in building an android app. Its where you declare activities, services and permission like accessing a camera."
   },
   {
     "question": "What is a Context?",
-    "answer": ""
+    "answer": "It is the context of current state of the application/object, which lets newly-created objects understand what has been going on. We call it to get information regarding another part of your program (activity and package/application).\nConext can be retrieved by invoking getApplicationContext(), getContext(), getBassContext(), and this(when in a class that extends from Application, Activity, Service, IntentService classes). There are mainly two types of contexts used in Android applications, Application context and Activity Context.",
+    "termiologies": [
+      {
+        "term": "Application Context",
+        "meaning": "It is tied to the lifecycle of an application, and is used when you need a context whose lifecycle is separate from the current context or hwne you are passing ocntext beyond the scope of an activity.\nAn example of its use is when you have to create a singleton object for your application and that object needs a context alway pass the application context.\n Be careful that application context can create memory leaks if the Context from getApplciationContext() holds onto something created by your calls on it that you don't clean up (Activity and its related references will be garbage collected, but Applciation object remaisn for the lifetime of your process)."
+      },
+      {
+        "term": "Activity Context",
+        "meaning": "It is available in an activity, and is tied to the lifecycle of an activity. Normally used when you are passing the context in the scope of an activity o you need the context whose lifecycle is attached to the current context.\nAn example of its use if when you have to create an objec whose ifecycle is attached to an activity."
+      }
+    ]
   },
   {
     "question": "What is an Intent?",
-    "answer": ""
+    "answer": "An abstract description of an operation to be performed. It can be used to\n1. start activities (ex. button click -> new activity)\n2. start services (ex. download file in background)\n3. deliver broadcasts(ex. system informs device is charging)\nDifferent types of intents are Explicit, Implicit, Sticky, and Pendign.",
+    "termiologies": [
+      {
+        "term": "Explicit Intent",
+        "meaning": "Used when calling an applciaiton activity from another activity of the same application."
+      },
+      {
+        "term": "Implicit Intent",
+        "meaning": "Ask system to find activity that can handle this request."
+      },
+      {
+        "term": "Sticky Intent",
+        "meaning": "Allows communication between a functio nand a service. The intent you are sending stays aroudn ater the broadcast is complete, so that others can quickly retrieve that data trhoguh the return vaue of registerReceiver(BroadcastReceiver, IntentFilter)"
+      },
+      {
+        "term": "Pending Intent",
+        "meaning": "An object which wraps an Intent ot do some future work by another app. It passes a future intent to antoher applciation and allows that applciation to execute that intent as if it had the same premissions as our application, whether or not our applciation is still around when the intent is eventually invoked."
+      }
+    ]
   },
   {
     "question": "What are Fragments?",
-    "answer": ""
+    "answer": "Fragment is a reusable class implementing a portion of an activity. It has it sown views, events, and logic, and its lifecycle is closely related to the lifecycle of its host activity.",
+    "termiologies": [
+      {
+        "term": "Lifecycle of Fragments when fragment come up on the screen",
+        "meaning": "onAttach(): fragment has been attached to an activity; passing hte Activity that will host our fragment\nonCreate(): called when a fragment instance initializes\nonCreateView(): called when it's time for the fragmetn to draw its use interface for hte first time; returns a View componenet from this method to dra a UI for hte fragment\nonActivityCreated(): called when Activity completes its onCreate() method\nonStart(): called when a fragment is visible\nonResume(): called when a fragmetn is visible and allowing the user to itneract with it; resumes only after activity resumes"
+      },
+      {
+        "term": "Lifecycle of Fragments when fragment goes out of the screen",
+        "meaning": "onPause(): called when a fragment is not allowing the user to interact\nonStop(): called when the fragment is no longer visible\nonDestroyView9): called when the view and related resources created in onCreateView() are removed fro the activity's view hierarchy and destroyed\nonDestory(): called when the fragment does its final clean up\nonDetach(): called when the fragment is detached from its host activity."
+      }
+    ],
+    "associated_questions": [
+      {
+        "related_question": "Why do we use default constructor to create fragment?",
+        "related_answer": "The reason to pass parameters through bundle is that when the system restores a fragment (ex. on config change), it will automatically restore your bundle, and it is guaranteed to srestore the state of the fragment correctly to the same state the fragment was initialized with."
+      },
+      {
+        "related_question": "What are the differences between Fragment and Activity?",
+        "related_answer": "Activity provides a screen that users can interact with, Fragment repesents a behavior or a portion of user interface in an activity."
+      },
+      {
+        "related_question": "When would you use fragment over activity?",
+        "related_answer": "We use fragments when\nUI components are going to be used across multiple activities\nmultiple views that can be displayed side by side (ex. viewpager tabs)\nhave data that needs to be persisted across Activity restarts (ex. retained fragmetns)"
+      },
+      {
+        "related_question": "What are Retained Fragments?",
+        "related_answer": "Fragments are destroyed and recreated along with their parent Activity on configuration change. The method setRetainInstance(true) can bypass this destroy-and-recreate cycle, signating the system to retain the current instance of the fragment when the activity is recreated."
+      },
+      {
+        "related_question": "What is the difference between Add() and Replace() of Fragment in backstack?",
+        "related_answer": "Add():\nretains the existing fragments and adds a new fragment\nexisting fragment will be active and they won't be in \"paused\" state\nwhen a back button is pressed onCreateView() is not called for the existing fragment\n\nReplace():\nremoves the existing fragment and adds a new fragment\nwhen a back button is pressed the fragment that got replaced will be created with its onCreateView()\nclals addToBackStack() to save Fragment transaction to hte backstack before commit() ensures that user can return to the previous fragment"
+      },
+      {
+        "related_question": "Why do we use fragments?",
+        "related_answer": "We use fragments to deal for:\ndealing with device form-factor differences\npassing information between app screens\nuser interface organization\nadvanced UI metaphors"
+      },
+      {
+        "related_question": "How do you pass data between 2 fragments?",
+        "related_answer": "For example, if the program consists a MainActivity (contains a ViewPager that hosts the two fragments), a FragmentA (the sender), and a FragmentB (the receiver).\n\nFragmentA:\n\t\tdeclare a CustomInterface named MyInterface that contains a method send(String)\n\t\tto send a String to FragmentB, call the method send on an instance of MyInterface\n\nMainActivity:\n\t\timplement Myinterface and override the method send(String)\n\t\tFragmentB.get(String) gets the string from send and passes it int othe get method of FragmentB.\n\nFragmentB:\n\t\tcreate a method get(String)"
+      },
+      {
+        "related_question": "What is the difference between FragmentPagerAdapter and FragmentStatePagerAdapter?",
+        "related_answer": "FragmentPagerAdapter:\n\t\tfragment of each page the user vistis will be stored in memory even the view will be destroyed\n\t\twhen the page is visible again, the view will be recreated but hte fragment isntance is not recreated\n\t\tcan result in a significant amount of memory being used\n\t\tshould be used when we need to store the whole fragment in memory\n\nFragmentStatePagerAdapter:\n\t\tfragment instance is destroyed when ti is not visible to the User, except the saved state of the fragment\n\t\tresults in using only a small amount of memory\n\t\tuseful for handling larger data sets\n\t\tshould be used when we have to use dynamic fragments\n\t\two't affect the performance even if there are large number of fragments"
+      }
+    ]
   },
   {
     "question": "What are Dialogs?",
-    "answer": ""
+    "answer": "A dialog is a small window that prompts the user to make a decision or enter additional information. A dialog does not fill the screen and is normally used for events that require users to take an action before they can proceed. In android, the types of Dialogs you can create are Alert Dialog, DatePicker Dialog, TimePicker Dialog, and Custom Dialog.",
+    "termiologies": [
+      {
+        "term": "Alert Dialog",
+        "meaning": "Used when you wanted to ask the user about taking a decision betwen yer or no in response of any particular action taken by the user, by remaining in the same activity and without changing the screen."
+      },
+      {
+        "term": "DatePicker Dialog",
+        "meaning": "DatePicker and DatePickerDailgo componenets are provided to generate the TimePicker Dialog that allows the user to select hte date consisting of day, month and year in a custom user interface."
+      },
+      {
+        "term": "TimePicker Dialog",
+        "meaning": "A dialog that prompts the user for hte time of day using a TimePicker, ineither 240hour or AM/PM mode. THe TimePicker ensures that the users will select a valid time for the day."
+      }
+    ],
+    "associated_questions": [
+      {
+        "related_question": "What is DialogFragment?",
+        "related_answer": "A fragment that displays a dialog window that floats on top of its activity's window. It contains a Dialog object, and take care of orientation, configuration changes."
+      }
+    ]
   },
   {
     "question": "What are the Launch Modes in Android?",
-    "answer": ""
+    "answer": "Launch mode is an instruction for Android OS which specifies how the activity should be launched. It instructs how any new activity should be associated with the current task. There are four launch modes for activity, Standard, Single Top, Single Task, and Single Instance.",
+    "termiologies": [
+      {
+        "term": "Standard",
+        "meaning": "Creates a new instance of an activity in the task from which it was started. Multiple instances of the activity can be created. Multiple instances can be added to the same or different tasks.\n\nex) Assume there is an activity stack of A -> B -> C.\nIf we launch B again, the new stack will be A -> B -> C -> B."
+      },
+      {
+        "term": "Single Top",
+        "meaning": "Basically the same as standard, except if there is a previous instance of the activity that exists in the top of the stack, then it will not create a new instnace but rather send the intent of the existing instance of hte activity.\n\nex) Assume there is an activity stack of A -> B.\nIf we launch C, the new stack will be A -> B -> C.\nIf we launch C again, the new stack will still be A -> B -> C."
+      },
+      {
+        "term": "Single Task",
+        "meaning": "A new task will always be created, and a new instance will be pushed to the task as the root one (if the activity is already in the task, the intent will be redirected to onNewIntent(), else a new instance will be created). Only one instance of activity will exist at a time.\n\nex) Assume there is an activity stack of A -> B -> C -> D\nIf we launch D, the new stack will be A -> B -> C -> D.\nIf we launch activity B again, the new activity stack will be A -> B (activities C and D will be destroyed)."
+      },
+      {
+        "term": "Single Instance",
+        "meaning": "Basically the same as Single Task, but system does not launch any activities in the same task as this activity. If new activities are launched, they are done in a separate task.\n\nex) Assume there is an activity stack of A -> B -> C -> D.\nIf we launch activity D again, the new activit stack will be\n\t\tTask 1: A -> B -> C\n\t\tTask 2: D"
+      }
+    ]
   },
   {
     "question": "What is Configuration Change?",
-    "answer": ""
+    "answer": "It refers to the scenario where the current screen layout has to be destroyed and recreated due to device being rotated, a different system language is chosen, and multi-window mode is triggered.\nThe system goes through the following on configuration change:\n\t\t1. shuts down activity: onPause() -> onStop() -> onDestroy()\n\t\t2.then starts it over: onCreate() -> onStart() -> onResume()",
+    "associated_questions": [
+      {
+        "related_question": "How to prevent data loss from Configuration Change?",
+        "related_answer": "Some of the common methods used to save the data to prevent data loss during configuration change are using Bundle (OnSaveInstanceState() to store data before pausing the activity, and OnRestoreInstanceState() to recover the saved state fro mthe Bundle that the system passes to the activity), implement LiveData, and save the data into Room/SQLite database."
+      }
+    ]
   },
   {
     "question": "What are Android Design Patterns?",
-    "answer": ""
+    "answer": "Design patterns are reusable solutions to the most commonly occurring software problems. They can speed up the development process by providing a proven way of resolving frequent issues. Popular design patterns include:\nCreational Design Patterns deliver solutions for creating classes, objects (Singleton, Factory, Builder, etc.)\nStructural Design Patterns are about arrangement of classes and objects (e.g. Composite, Facade, Adapter)\nBehavioral Design Patterns give us ways to communicate between objects and classes (Command, Observer, Strategy, etc.)",
+    "termiologies": [
+      {
+        "term": "Creational patterns",
+        "meaning": ""
+      },
+      {
+        "term": "Structural patterns",
+        "meaning": ""
+      },
+      {
+        "term": "Behavioral patterns",
+        "meaning": ""
+      }
+    ]
   },
   {
     "question": "What are Flavors?",
-    "answer": ""
+    "answer": "Android Product Flavors are used to create different app versions. App versions can be free or paid. They can have different themes and texts. They can use different environments or APIs. Let's assign two product flavors free and paid in our application."
   },
   {
     "question": "What is ProGuard used for?",
-    "answer": ""
+    "answer": "Proguard is free Java class file shrinker, optimizer, obfuscator, and preverifier. It detects and removes unused classes, fields, methods, and attributes. It optimizes bytecode and removes unused instructions. It renames the remaining classes, fields, and methods using short meaningless names."
   },
   {
     "question": "What is ANR?",
-    "answer": ""
+    "answer": "ANR stands for Application Not Responding. When you try to run long processes in android on your main thread (which you should NOT be doing) and it is taking too long (more than 5 seconds) to be processed."
   },
   {
     "question": "What is the Android build process?",
-    "answer": ""
+    "answer": "The Android build system compiles app resources and source code, and packages them into APKs that you can test, deploy, sign, and distribute. Android Studio uses Gradle, an advanced build toolkit, to automate and manage the build process."
   },
   {
     "question": "What is an Activity Stack, how is it managed?",
-    "answer": ""
+    "answer": "Activities are arranged in a stack—the back stack, in the order in which each activity is opened. To manage the back-stack Android used a system known as Last In First Out (LIFO)."
   }
 ]
