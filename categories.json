@@ -1,34 +1,32 @@
-{
-  "categories:" [
-    {
-      "category": "Basics"
-    },
-    {
-      "category": "UI" 
-    },
-    {
-      "category": "Data" 
-    },
-    {
-      "category": "Architecture" 
-    },
-    {
-      "category": "Services" 
-    },
-    {
-      "category": "Testing" 
-    },
-    {
-      "category": "Libraries" 
-    },
-    {
-      "category": "Notifications" 
-    },
-    {
-      "category": "Java" 
-    },
-    {
-      "category": "Kotlin" 
-    }
-  ]
-}
+[
+  {
+    "category": "Basics"
+  },
+  {
+    "category": "UI" 
+  },
+  {
+    "category": "Data" 
+  },
+  {
+    "category": "Architecture" 
+  },
+  {
+    "category": "Services" 
+  },
+  {
+    "category": "Testing" 
+  },
+  {
+    "category": "Libraries" 
+  },
+  {
+    "category": "Notifications" 
+  },
+  {
+    "category": "Java" 
+  },
+  {
+    "category": "Kotlin" 
+  }
+]
