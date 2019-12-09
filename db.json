@@ -1,20 +1,40 @@
 [
   {
-    "question": "What is an Intent?",
-    "answer": "An intent is a messagin object used to ransfer data from one activity, fragment, to another. It can be implicit or explicit"
+    "question": "",
+    "answer": ""
   },
   {
-    "question": "What are Services?",
-    "answer": "A Service is an applicaiton component that can perform long-running operation in the background, and it doesn't provide a user interface. Another application component can start a service, and it continues to run in the background even if the user switches to another application."
-  },
-  {
-    "question": "Android Components",
-    "answer": "Activities\n\t\t- what program use to interact with the user\n\t\t- initialize with \"onCreate\"\nServices\n\t\t- background process\n\t\t- no user interface",
-    "add_on": [
+    "question": "",
+    "answer": "",
+    "termiologies": [
       {
-        "term": "Add on term",
-        "meaning": "Add on meaning"
+        "term": "",
+        "meaning": ""
+      },
+      {
+        "term": "",
+        "meaning": ""
       }
     ]
-  }
+  },
+  {
+    "question": "",
+    "answer": "",
+    "termiologies": [
+      {
+        "term": "",
+        "meaning": ""
+      },
+      {
+        "term": "",
+        "meaning": ""
+      }
+    ],
+    "associated_questions": [
+      {
+        "related_question": "",
+        "related_answer": ""
+      }
+    ]
+  },
 ]
