@@ -1,4 +1,5 @@
 [
+  "data_category" : "Basics",
   {
     "question": "What are Android Components?",
     "answer": "Activities\nServices\nContent Providers\nBroadcast Receivers",
