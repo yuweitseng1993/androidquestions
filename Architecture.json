@@ -1,0 +1,86 @@
+[
+  {
+    "question": "What are different architecture patterns in Android?",
+    "answer": "MVC (Model-View-Controller)\nMVP (Model-View-Presenter)\nMVVM (Model-View-ViewModel)\nMVI (Model-View-Intent)"
+  },
+  {
+    "question": "What is Model-View-Controller?",
+    "answer": "",
+    "termiologies": [
+      {
+        "term": "",
+        "meaning": ""
+      },
+      {
+        "term": "",
+        "meaning": ""
+      }
+    ],
+    "associated_questions": [
+      {
+        "related_question": "",
+        "related_answer": ""
+      }
+    ]
+  },
+  {
+    "question": "What is Model-View-Provider?",
+    "answer": "",
+    "termiologies": [
+      {
+        "term": "",
+        "meaning": ""
+      },
+      {
+        "term": "",
+        "meaning": ""
+      }
+    ],
+    "associated_questions": [
+      {
+        "related_question": "",
+        "related_answer": ""
+      }
+    ]
+  },
+  {
+    "question": "What is Model-View-ViewModel?",
+    "answer": "",
+    "termiologies": [
+      {
+        "term": "",
+        "meaning": ""
+      },
+      {
+        "term": "",
+        "meaning": ""
+      }
+    ],
+    "associated_questions": [
+      {
+        "related_question": "",
+        "related_answer": ""
+      }
+    ]
+  },
+  {
+    "question": "What is Model-View-Intent?",
+    "answer": "",
+    "termiologies": [
+      {
+        "term": "",
+        "meaning": ""
+      },
+      {
+        "term": "",
+        "meaning": ""
+      }
+    ],
+    "associated_questions": [
+      {
+        "related_question": "",
+        "related_answer": ""
+      }
+    ]
+  }
+]
