@@ -209,19 +209,19 @@
     },
     {
       "question": "What are Android Design Patterns?",
-      "answer": "Design patterns are reusable solutions to the most commonly occurring software problems. They can speed up the development process by providing a proven way of resolving frequent issues. Popular design patterns include:\nCreational Design Patterns deliver solutions for creating classes, objects (Singleton, Factory, Builder, etc.)\nStructural Design Patterns are about arrangement of classes and objects (e.g. Composite, Facade, Adapter)\nBehavioral Design Patterns give us ways to communicate between objects and classes (Command, Observer, Strategy, etc.)",
+      "answer": "Design patterns are reusable solutions to the most commonly occurring software problems. They can speed up the development process by providing a proven way of resolving frequent issues. The three most Popular design patterns include:\nCreational Design Patterns, \nStructural Design Patterns, and \nBehavioral Design Patterns",
       "termiologies": [
         {
           "term": "Creational patterns",
-          "meaning": ""
+          "meaning": "-	Creational Design Patterns deliver solutions for creating classes, objects (Singleton, Factory, Builder, etc.)"
         },
         {
           "term": "Structural patterns",
-          "meaning": ""
+          "meaning": "-	Structural Design Patterns are about arrangement of classes and objects (e.g. Composite, Facade, Adapter)"
         },
         {
           "term": "Behavioral patterns",
-          "meaning": ""
+          "meaning": "Behavioral Design Patterns give us ways to communicate between objects and classes (Command, Observer, Strategy, etc.)"
         }
       ]
     },
