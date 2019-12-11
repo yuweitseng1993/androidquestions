@@ -26,7 +26,7 @@
     {
       "question": "What are Activity Lifecycles, when are they triggered?",
       "answer": "onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy(), onRestart()",
-      "termiologies": [
+      "terminologies": [
         {
           "term": "onCreate()",
           "meaning": "When the view is first created.\nWhere we create views, get data from bundles, etc."
@@ -84,7 +84,7 @@
     {
       "question": "What is an Intent?",
       "answer": "An abstract description of an operation to be performed. It can be used to\n1. start activities (ex. button click -> new activity)\n2. start services (ex. download file in background)\n3. deliver broadcasts(ex. system informs device is charging)\nDifferent types of intents are Explicit, Implicit, Sticky, and Pendign.",
-      "termiologies": [
+      "terminologies": [
         {
           "term": "Explicit Intent",
           "meaning": "Used when calling an applciaiton activity from another activity of the same application."
@@ -106,7 +106,7 @@
     {
       "question": "What are Fragments?",
       "answer": "Fragment is a reusable class implementing a portion of an activity. It has it sown views, events, and logic, and its lifecycle is closely related to the lifecycle of its host activity.",
-      "termiologies": [
+      "terminologies": [
         {
           "term": "Lifecycle of Fragments when fragment come up on the screen",
           "meaning": "onAttach(): fragment has been attached to an activity; passing hte Activity that will host our fragment\nonCreate(): called when a fragment instance initializes\nonCreateView(): called when it's time for the fragmetn to draw its use interface for hte first time; returns a View componenet from this method to dra a UI for hte fragment\nonActivityCreated(): called when Activity completes its onCreate() method\nonStart(): called when a fragment is visible\nonResume(): called when a fragmetn is visible and allowing the user to itneract with it; resumes only after activity resumes"
@@ -154,7 +154,7 @@
     {
       "question": "What are Dialogs?",
       "answer": "A dialog is a small window that prompts the user to make a decision or enter additional information. A dialog does not fill the screen and is normally used for events that require users to take an action before they can proceed. In android, the types of Dialogs you can create are Alert Dialog, DatePicker Dialog, TimePicker Dialog, and Custom Dialog.",
-      "termiologies": [
+      "terminologies": [
         {
           "term": "Alert Dialog",
           "meaning": "Used when you wanted to ask the user about taking a decision betwen yer or no in response of any particular action taken by the user, by remaining in the same activity and without changing the screen."
@@ -178,7 +178,7 @@
     {
       "question": "What are the Launch Modes in Android?",
       "answer": "Launch mode is an instruction for Android OS which specifies how the activity should be launched. It instructs how any new activity should be associated with the current task. There are four launch modes for activity, Standard, Single Top, Single Task, and Single Instance.",
-      "termiologies": [
+      "terminologies": [
         {
           "term": "Standard",
           "meaning": "Creates a new instance of an activity in the task from which it was started. Multiple instances of the activity can be created. Multiple instances can be added to the same or different tasks.\n\nex) Assume there is an activity stack of A -> B -> C.\nIf we launch B again, the new stack will be A -> B -> C -> B."
@@ -210,7 +210,7 @@
     {
       "question": "What are Android Design Patterns?",
       "answer": "Design patterns are reusable solutions to the most commonly occurring software problems. They can speed up the development process by providing a proven way of resolving frequent issues. The three most Popular design patterns include:\nCreational Design Patterns, \nStructural Design Patterns, and \nBehavioral Design Patterns",
-      "termiologies": [
+      "terminologies": [
         {
           "term": "Creational patterns",
           "meaning": "-	Creational Design Patterns deliver solutions for creating classes, objects (Singleton, Factory, Builder, etc.)"
