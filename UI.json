@@ -1,0 +1,74 @@
+  
+{
+  "data_category" : "UI",
+  "ques_ans_list": [
+    {
+      "question": "What is the difference between View and ViewGroup?",
+      "answer": ""
+    },
+    {
+      "question": "What is the difference between RecyclerView and ListView?",
+      "answer": "",
+      "terminologies": [
+        {
+          "term": "ViewHolder Pattern",
+          "meaning": ""
+        },
+        {
+          "term": "LayoutManager",
+          "meaning": ""
+        },
+        {
+          "term": "Item Animator",
+          "meaning": ""
+        }
+      ]
+    },
+    {
+      "question": "What are different types of Layout, what is something unique about each of them?",
+      "answer": "",
+      "terminologies": [
+        {
+          "term": "LinearLayout",
+          "meaning": ""
+        },
+        {
+          "term": "FrameLayout",
+          "meaning": ""
+        },
+        {
+          "term": "CoordinatorLayout",
+          "meaning": ""
+        },
+        {
+          "term": "RelativeLayout",
+          "meaning": ""
+        },
+        {
+          "term": "ConstraintLayout",
+          "meaning": ""
+        }
+      ]
+    },
+    {
+      "question": "What is the difference between Include and Merge?",
+      "answer": ""
+    },
+    {
+      "question": "How are Margin and Padding effects different from each other?",
+      "answer": ""
+    },
+    {
+      "question": "What is an Adapter?",
+      "answer": ""
+    },
+    {
+      "question": "How to support different screen sizes?",
+      "answer": ""
+    },
+    {
+      "question": "How to implement a Swipe Animation?",
+      "answer": ""
+    }
+  ]
+}
