@@ -25,7 +25,7 @@
     },
     {
       "question": "What are Activity Lifecycles, when are they triggered?",
-      "answer": "onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy(), onRestart()",
+      "answer": "The Activity class provides a core set of six callbacks: onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy(), onRestart(), to navigate transitions between stages of the activity lifeycycle. The system invokes each of these callbacks as an activity enters a new state. ",
       "terminologies": [
         {
           "term": "onCreate()",
