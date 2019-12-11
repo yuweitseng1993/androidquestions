@@ -1,0 +1,40 @@
+  
+{
+  "data_category" : "Data",
+  "ques_ans_list": [
+    {
+      "question": "What are ways to send and receive data within the application?",
+      "answer": "",
+      "associated_questions": [
+      {
+        "related_question": "What is the difference between Serializable and Parcelable?",
+        "related_answer": ""
+      }
+    ]
+    },
+    {
+      "question": "What is Data Access Object (DAO)?",
+      "answer": ""
+    },
+    {
+      "question": "What is the Loader API?",
+      "answer": ""
+    },
+    {
+      "question": "What is the difference between Commit and Apply in Shared Preference?",
+      "answer": ""
+    },
+    {
+      "question": "What are the steps to implement SQLite database?",
+      "answer": ""
+    },
+    {
+      "question": "What are the steps to implement Room database?",
+      "answer": ""
+    },
+    {
+      "question": "What is Data Binding?",
+      "answer": ""
+    }
+  ]
+}
