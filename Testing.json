@@ -1,0 +1,36 @@
+  
+{
+  "data_category" : "Testing",
+  "ques_ans_list": [
+    {
+      "question": "What is a Service?",
+      "answer": "",
+      "terminologies": [
+        {
+          "term": "",
+          "meaning": ""
+        },
+        {
+          "term": "",
+          "meaning": ""
+        }
+      ]
+    },
+    {
+      "question": "What is the difference between Sercie, Intent Service, AsyncTask, and Threads?",
+      "answer": ""
+    },
+    {
+      "question": "How do you implement Multi-Threading in Android?",
+      "answer": ""
+    },
+    {
+      "question": "What is Job Scheduling?",
+      "answer": ""
+    },
+    {
+      "question": "How to update UI from a Background Service?",
+      "answer": ""
+    }
+  ]
+}
