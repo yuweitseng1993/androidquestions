@@ -1,0 +1,68 @@
+  
+{
+  "data_category" : "Kotlin",
+  "ques_ans_list": [
+    {
+      "question": "What are some features of Kotlin over Java?",
+      "answer": ""
+    },
+    {
+      "question": "What is the difference between <b>val</b> and <b>var</b>?",
+      "answer": ""
+    },
+    {
+      "question": "What does <b>lateinit</b> do?",
+      "answer": "",
+      "associated_questions": [
+        {
+          "related_question": "When would you use lazy initilization over lateinit?",
+          "related_answer": ""
+        }
+      ]
+    },
+    {
+      "question": "What are <b>higher order functions</b>?",
+      "answer": ""
+    },
+    {
+      "question": "What are <b>structural jump expression</b> in Kotlin?",
+      "answer": ""
+    },
+    {
+      "question": "How do you declare <b>nullable types</b> in Kotlin?",
+      "answer": ""
+    },
+    {
+      "question": "What are different <b>types of constructors</b> in Kotlin?",
+      "answer": ""
+    },
+    {
+      "question": "How do you declare <b>singleton</b> in Kotlin?",
+      "answer": ""
+    },
+    {
+      "question": "What are <b>companion objects</b>?",
+      "answer": ""
+    },
+    {
+      "question": "Why do we use <b>let</b> and <b>defer</b> keyord in Kotlin?",
+      "answer": ""
+    },
+    {
+      "question": "What is the alternate keyword used instead of <b>switch</b> keyword in Kotlin?",
+      "answer": ""
+    },
+    {
+      "question": "What are <b>access modifiers</b> in Kotlin?",
+      "answer": ""
+    },
+    {
+      "question": "What are <b>coroutines</b> and <b>suspending</b> funcitons?",
+      "answer": ""
+    },
+    {
+      "question": "What is <b>multi platform support</b> in Kotlin?",
+      "answer": ""
+    }
+  ]
+}
