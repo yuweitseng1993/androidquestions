@@ -1,0 +1,40 @@
+  
+{
+  "data_category" : "Libraries",
+  "ques_ans_list": [
+    {
+      "question": "What is a <b>RxJava</b>?",
+      "answer": "",
+      "associated_questions": [
+        {
+          "related_question": "What are the benifits of RxJava over regular call?",
+          "related_answer": ""
+        },
+        {
+          "related_question": "What are the operators that RxJava has?",
+          "related_answer": ""
+        },
+        {
+          "related_question": "How to make RxJava multi-threaded?",
+          "related_answer": ""
+        }
+      ]
+    },
+    {
+      "question": "What is the difference between Sercie, Intent Service, AsyncTask, and Threads?",
+      "answer": ""
+    },
+    {
+      "question": "How do you implement Multi-Threading in Android?",
+      "answer": ""
+    },
+    {
+      "question": "What is Job Scheduling?",
+      "answer": ""
+    },
+    {
+      "question": "How to update UI from a Background Service?",
+      "answer": ""
+    }
+  ]
+}
