@@ -2,38 +2,56 @@
   "data_category" : "UI",
   "ques_ans_list": [
     {
-      "question": "What is the difference between View and ViewGroup?",
-      "answer": ""
-    },
-    {
-      "question": "What is the difference between RecyclerView and ListView?",
-      "answer": "",
+      "question": "What is the difference between <b>View</b> and <b>ViewGroup</b>?",
+      "answer": "View objects are the basic building blocks of UI elements in Android, which is a simple rectangle box which responds to the user's actions. \n\nViewGroup objects are invisible continers that can hold Views and other ViewGroups, and they are the base class for Layouts.",
       "terminologies": [
         {
+          "term": "View",
+          "meaning": "View objects are the basic building blocks of UI elements in Android. View is a simple rectangle box which responds to the user's actions.\nex) EditText, Button, CheckBox, etc."
+        },
+        {
+          "term": "ViewGroup",
+          "meaning": "ViewGroup is the invisible container. It holds View nad ViewGroup. For example, a vertical oriented LinearLayout(ViewGroup) can contain a Button(View), and a horizontal oriented LinearLayout(ViewGroup) that holds an ImageView(View) and a TextView(View) of the image's description."
+        }
+      ]
+    },
+    {
+      "question": "What is the difference between <b>RecyclerView</b> and <b>ListView</b>?",
+      "answer": "RecyclerView and ListView are both ViewGroups that used to hold a collection of data that are presented to the users in a list format. The differences between them are the use and implementation of ViewHolder Pattern, LayoutManager, and Item Animator in RecyclerView that are lacking in ListView.",
+      "terminologies": [
+        {
+          "term": "ListView",
+          "meaning": "\t\tvertical only scrolling list of elements\n\t\thas default adapters\n\t\tavailable OnItemClickListener\n\t\tsupports header and footer"
+        },
+        {
+          "term": "RecyclerView",
+          "meaning": "\t\tallows vertical and horizontal scrollign list/grid of elemtns\n\t\treuses cells while scrolling up/down (using ViewHolder pattern)\n\t\tdecouples list from its container\n\t\tanimates common list actions."
+        },
+        {
           "term": "ViewHolder Pattern",
-          "meaning": ""
+          "meaning": "A ViewHolder object stores each of the componenet views inside the tag field of the Layout, so you can immediately access them without hte need to look them up repeatedly.\nIn ListView, the code might call findViewById() frequently during the scrolling of ListView, which can slow down performance. Even when the Adapter returns an inflated view for recycling, you still need to look up the elements and update them. A way around repeated use of findViewByID() is to use the \"view holder\" design paatern."
         },
         {
           "term": "LayoutManager",
-          "meaning": ""
+          "meaning": "In a ListView, the only type of view available is the vertical ListView. A RecyclerView decouples list from its container so we can put list items easily at run tim in the different containers (LinearLayout, GridLayout) by setting LayoutManager."
         },
         {
           "term": "Item Animator",
-          "meaning": ""
+          "meaning": "ListViews are lacking in support of good animations, but ItemAnimator allows the definition of animations that take place on items as changes are made ot the adapter, which makes it eaiser to apply animations to items in the RecyclerView."
         }
       ]
     },
     {
       "question": "What are different types of Layout, what is something unique about each of them?",
-      "answer": "",
+      "answer": "Some popularly used Layouts are: LinearLayout, FrameLayout, CoordinatorLayout, RelativeLayout, and Constraintlayout.",
       "terminologies": [
         {
           "term": "LinearLayout",
-          "meaning": ""
+          "meaning": "Align its child objects in on e direction (horizontal/vertical)."
         },
         {
           "term": "FrameLayout",
-          "meaning": ""
+          "meaning": "Designed to contain a single item, making them an efficient choice when you need to display a single View. If you add multiple Views to a FrameLayout then it'll stack them on above the other, so it is also useful if you need overlapping Views."
         },
         {
           "term": "CoordinatorLayout",
@@ -41,33 +59,29 @@
         },
         {
           "term": "RelativeLayout",
-          "meaning": ""
+          "meaning": "Designed to align the child object relative to parent or some other child object position."
         },
         {
           "term": "ConstraintLayout",
-          "meaning": ""
+          "meaning": "It allows you to create large and complex layouts with a flat view hierarchy (no nested view groups). It's similar to Relativelayout in that all views are laid out according to relationships between sibling views and the parent layout, but i's more flexible than RelativeLayout and easier to use with Android Studio's Layout Editor."
         }
       ]
     },
     {
-      "question": "What is the difference between Include and Merge?",
-      "answer": ""
+      "question": "What is the difference between <b>Include</b> and <b>Merge</b>?",
+      "answer": "\"include\" and \"merge\" are both used for re-using layouts, where \"include\" basically copy and paste the entire layout fole into another layout file, and merge eliminates redundant view groups in the view hierarchy when including a layout within another."
     },
     {
-      "question": "How are Margin and Padding effects different from each other?",
-      "answer": ""
+      "question": "How are <b>Margin</b> and <b>Padding</b> effects different from each other?",
+      "answer": "Padding will be space added inside the container, where Margin will be space added outside the container."
     },
     {
-      "question": "What is an Adapter?",
-      "answer": ""
+      "question": "What is an <b>Adapter</b>?",
+      "answer": "An adpater is responsible for converting each data entry into a View that can then be added to the AdapterView (ListVeiew/RecyclerView)."
     },
     {
       "question": "How to support different screen sizes?",
-      "answer": ""
-    },
-    {
-      "question": "How to implement a Swipe Animation?",
-      "answer": ""
+      "answer": "In order to support different screen sizes, you can use COnstraintlayout as the base layout in your UI to create a flexible alyout, and avoid hard-coded layout sizes (use wrap_content or match_parent)."
     }
   ]
 }
