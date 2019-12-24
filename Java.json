@@ -2,7 +2,7 @@
   "data_category" : "Java",
   "ques_ans_list": [
     {
-      "question": "What are the concepts of Object Oriented?",
+      "question": "What are the concepts of <b>Object Oriented</b>?",
       "answer": "",
       "terminologies": [
         {
@@ -21,32 +21,42 @@
           "term": "Polymorphism",
           "meaning": ""
         }
-      ]
-    },
-    {
-      "question": "What is an Interface?",
-      "answer": "",
+      ],
       "associated_questions": [
         {
-          "related_question": "What is an Marker Interface?",
+          "related_question": "Difference between <b>Encapsulation</b> and <b>Abstraction</b>?",
           "related_answer": ""
         }
       ]
     },
     {
-      "question": "What is Functional Interface?",
+      "question": "What is an <b>Interface</b>?",
       "answer": "",
       "associated_questions": [
         {
-          "related_question": "What are the differences between a Runnable and a Callable?",
+          "related_question": "What is an <b>Marker Interface</b>?",
           "related_answer": ""
         }
       ]
     },
     {
-      "question": "What is an Abstract Class?",
+      "question": "What is <b>Functional Interface</b>?",
       "answer": "",
       "associated_questions": [
+        {
+          "related_question": "What are the differences between a <b>Runnable</b> and a <b>Callable</b>?",
+          "related_answer": ""
+        }
+      ]
+    },
+    {
+      "question": "What is an <b>Abstract Class</b>?",
+      "answer": "",
+      "associated_questions": [
+        {
+          "related_question": "What is the difference between <b>Abstract class</b> and <b>Interface</b>?",
+          "related_answer": ""
+        },
         {
           "related_question": "When you would use abstract class and interfaces? Example?",
           "related_answer": ""
@@ -54,7 +64,7 @@
       ]
     },
     {
-      "question": "What are Java Collections?",
+      "question": "What are <b>Java Collections</b>?",
       "answer": "",
       "terminologies": [
         {
@@ -85,7 +95,177 @@
           "term": "PriorityQueue",
           "meaning": ""
         }
-      ]
-    }
+    ],
+    "associated_questions": [
+      {
+        "related_question": "Difference between <b>ArrayList</b> and <b>Vectors</b>?",
+        "related_answer": ""
+      },
+      {
+        "related_question": "Why is <b>insertion</b> and <b>deletion</b> in ArrayList slower compared to LinkedList?",
+        "related_answer": ""
+      }
+    ]
+    },
+      {
+        "question": "What is Java <b>Exception Handling</b>?",
+        "answer": "",
+        "associated_questions": [
+          {
+            "related_question": "What is the difference between <b>\"throw\"</b> and <b>\"throws\"</b> in Java Exception Handling?",
+            "related_answer": ""
+          },
+          {
+            "related_question": "Is there ever a scenario where we can skip the finally block in a try catch?",
+            "related_answer": ""
+          }
+        ]
+      },
+      {
+        "question": "What are <b>anonymous classes</b>?",
+        "answer": ""
+      },
+      {
+        "question": "Why is the main method <b>static</b> in Java?",
+        "answer": ""
+      },
+      {
+        "question": "What is <b>garbage collector</b>? How does it work?",
+        "answer": ""
+      },
+      {
+        "question": "Difference between <b>stack</b> and <b>heap</b> memory?",
+        "answer": ""
+      },
+      {
+        "question": "What is <b>Inheritance</b>?",
+        "answer": "",
+        "associated_questions": [
+          {
+            "related_question": "Does Java support multiple inheritance?",
+            "related_answer": ""
+          }
+        ]
+      },
+      {
+        "question": "What is <b>Polymorphism</b>?",
+        "answer": "",
+        "terminologies": [
+          {
+            "term": "Compile time polymorphism",
+            "meaning": ""
+          },
+          {
+            "term": "Run time polymorphism",
+            "meaning": ""
+          }
+        ]
+      },
+      {
+        "question": "What is the difference between <b>Method overloading</b> and <b>Method overriding</b>?",
+        "answer": ""
+      },
+      {
+        "question": "Why would you not call abstract method in constructor?",
+        "answer": ""
+      },
+      {
+        "question": "<b>Composition</b> over <b>inheritance</b>?",
+        "answer": ""
+      },
+      {
+        "question": "<b>Constructors</b> vs <b>Methods</b>?",
+        "answer": ""
+      },
+      {
+        "question": "What is the difference between <b>instantiation</b> and <b>initialisation</b> of an object?",
+        "answer": ""
+      },
+      {
+        "question": "Do objects get passed by <b>reference</b> or <b>value</b> in Java?",
+        "answer": "",
+        "terminologies": [
+          {
+            "term": "pass by reference",
+            "meaning": ""
+          },
+          {
+            "term": "pass by value",
+            "meaning": ""
+          }
+        ]
+      },
+      {
+        "question": "Primitives in Java?",
+        "answer": ""
+      },
+      {
+        "question": "Difference between <b>\"== \"</b> and <b>\".equals()\"</b> method in Java?",
+        "answer": ""
+      },
+      {
+        "question": "Why are Strings <b>immutable</b>?",
+        "answer": ""
+      },
+      {
+        "question": "What is <b>String.intern()</b>? When and why should it be used?",
+        "answer": ""
+      },
+      {
+        "question": "WHat is <b>String pool</b> in Java?",
+        "answer": ""
+      },
+      {
+        "question": "What are <b>static variables</b>?",
+        "answer": ""
+      },
+      {
+        "question": "What does the <b>final modifier</b> do?",
+        "answer": "",
+        "terminologies": [
+          {
+            "term": "fianl classes",
+            "meaning": ""
+          },
+          {
+            "term": "final variables",
+            "meaning": ""
+          },
+          {
+            "term": "final methods",
+            "meaning": ""
+          }
+        ]
+      },
+      {
+        "question": "Difference between <b>stacks</b> and <b>queues</b>?",
+        "answer": ""
+      },
+      {
+        "question": "What is a <b>deadlock</b> in Java?",
+        "answer": ""
+      },
+      {
+        "question": "Difference between <b>Enumeration</b> and <b>Iterators</b>?",
+        "answer": ""
+      },
+      {
+        "question": "What are <b>Generics</> in Java?",
+        "answer": "",
+        "terminologies": [
+          {
+            "term": "Type-safety",
+            "meaning": ""
+          },
+          {
+            "term": "Type casting is not required",
+            "meaning": ""
+          },
+          {
+            "term": "Compile time checking",
+            "meaning": ""
+          }
+        ],
+      }
   ]
 }
