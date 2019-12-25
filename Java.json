@@ -3,267 +3,288 @@
   "ques_ans_list": [
     {
       "question": "What are the concepts of <b>Object Oriented</b>?",
-      "answer": "",
+      "answer": "Object Oriented Programming is a programming style that involves concepts such as Classes, objects,Abstraction, Encapsulation, Inheritance, Polymorphism.",
       "terminologies": [
         {
           "term": "Abstraction",
-          "meaning": ""
+          "meaning": "Abstraction is selecting data from a larger pool to show only the relevant details to the object. It helps to reduce programming complexity and effort. In Java, abstraction is accomplished using Abstract classes and interfaces."
         },
         {
           "term": "Encapsulation",
-          "meaning": ""
+          "meaning": " Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. Encapsulation is also used for hiding the properties and behaviours of an object and allowing outside access only as appropriate. It prevents other objects from directly altering or accessing the properties or methods of the encapsulated object."
         },
         {
           "term": "Inheritance",
-          "meaning": ""
+          "meaning": "Inheritance is the process by which objects of one class acquire the properties & objects of another class. TThe idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class."
         },
         {
           "term": "Polymorphism",
-          "meaning": ""
+          "meaning": "Polymorphism is when an object takes on multiple forms. For instance, String is a subclass of Object class. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object."
         }
       ],
       "associated_questions": [
         {
           "related_question": "Difference between <b>Encapsulation</b> and <b>Abstraction</b>?",
-          "related_answer": ""
+          "related_answer": "<ul>
+          <li>Abstraction focuses on the outside view of an object (i.e. the interface)</li>
+          <li>Encapsulation (information hiding) prevents clients from seeing it’s inside view.</li>
+          <li>Abstraction solves the problem in the design side while Encapsulation is the Implementation.</li>
+          </ul>"
         }
       ]
     },
     {
       "question": "What is an <b>Interface</b>?",
-      "answer": "",
+      "answer": "An interface is a reference type in Java. It is similar to class. It is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface. Along with abstract methods, an interface may also contain constants, default methods, static methods, and nested types.",
       "associated_questions": [
         {
           "related_question": "What is an <b>Marker Interface</b>?",
-          "related_answer": ""
+          "related_answer": "Marker interface in Java. It is an empty interface (no field or methods). Examples of marker interface are Serializable, Clonnable and Remote interface."
         }
       ]
     },
     {
       "question": "What is <b>Functional Interface</b>?",
-      "answer": "",
+      "answer": "A functional interface is an interface that contains only one abstract method. They can have only one functionality to exhibit. A functional interface can have any number of default methods; such as, Runnable, ActionListener, and Comparable. ",
       "associated_questions": [
         {
           "related_question": "What are the differences between a <b>Runnable</b> and a <b>Callable</b>?",
-          "related_answer": ""
+          "related_answer": "Callable has call() method but Runnable has run() method. Callable has call method which returns value but Runnable has run method which doesn't return any value. call method can throw checked exception but run method can't throw checked exception."
         }
       ]
     },
     {
       "question": "What is an <b>Abstract Class</b>?",
-      "answer": "",
+      "answer": "Abstract class in Java is similar to interface except that it can contain default method implementation. An abstract class is mostly used to provide a base for subclasses to extend and implement the abstract methods and override or use the implemented methods in abstract class.",
       "associated_questions": [
         {
           "related_question": "What is the difference between <b>Abstract class</b> and <b>Interface</b>?",
-          "related_answer": ""
+          "related_answer": "The main difference between an <b>Abstract class</b> and <b>Interface</b> is the methods of a Java interface are implicitly abstract and cannot have implementations. A java abstract class can have instance methods that implements a default behaviour. Also:
+            <ul>
+              <li>Variables declared in a Java interface is by default final. An  abstract class may contain non-final variables.</li>
+              <li>Members of a Java interface are public by default. A Java abstract class can have the usual flavors of class members like private, protected, etc..</li>
+              <li>Java interface should be implemented using keyword “implements”; A Java abstract class should be extended using keyword “extends”.</li>
+              <li>An interface can extend another Java interface only, an abstract class can extend another Java class and implement multiple Java interfaces.</li>
+            </ul>
+          "
         },
         {
-          "related_question": "When you would use abstract class and interfaces? Example?",
-          "related_answer": ""
+          "related_question": "When you would use <b>abstract class</b> and <b>interfaces</b>? Example?",
+          "related_answer": "Use an abstract class when You expect that classes that extend your abstract class have many common methods or fields or require access modifiers other than public (such as protected and private). Use an Interface when you expect that unrelated classes would implement your interface. For example, the interfaces Comparable and Cloneable are implemented by many unrelated classes. Or when you want to take advantage of multiples inheritances"
         }
       ]
     },
     {
       "question": "What are <b>Java Collections</b>?",
-      "answer": "",
+      "answer": "A Collection is a group of individual objects represented as a single unit. Java provides Collection Framework which defines several classes and interfaces to represent a group of objects as a single unit. Popular Java collection Framework includes <i>ArrayList</i>, <i>LinkedList</i>, <i>HashMap</i>, <i>HashSet</i>, <i>TreeSet</i>, <i>TreeMap</i>, etc",
       "terminologies": [
         {
           "term": "ArrayList",
-          "meaning": ""
+          "meaning": "ArrayList in Java is used to store dynamically sized collection of elements. Contrary to Arrays that are fixed in size, an ArrayList grows its size automatically when new elements are added to it. ArrayList is part of Java's collection framework and implements Java's List interface. "
         },
         {
           "term": "LinkedList",
-          "meaning": ""
+          "meaning": "Similar to arrays in Java, LinkedList is a linear data structure. However LinkedList elements are not stored in contiguous locations like arrays, they are linked with each other using pointers. Each element of the LinkedList has the reference(address/pointer) to the next element of the LinkedList."
         },
         {
           "term": "HashMap",
-          "meaning": ""
+          "meaning": "Java HashMap is a hash table based implementation of Java's Map interface. A Map, as you might know, is a collection of key-value pairs. ... Java HashMap allows null values and the null key. HashMap is an unordered collection. It does not guarantee any specific order of the elements."
         },
         {
           "term": "HashSet",
-          "meaning": ""
+          "meaning": "Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.  HashSet stores the elements by using a mechanism called hashing. HashSet contains unique elements only. HashSet allows null value."
         },
         {
           "term": "TreeSet",
-          "meaning": ""
+          "meaning": "TreeSet is one of the most important implementations of the SortedSet interface in Java that uses a Tree for storage. TreeSet implements the SortedSet interface so duplicate values are not allowed. Objects in a TreeSet are stored in a sorted and ascending order."
         },
         {
           "term": "TreeMap",
-          "meaning": ""
+          "meaning": "TreeMap is a tree based implementation that provides an efficient means of storing key-value pairs in sorted order. The important points about Java TreeMap class are: Java TreeMap contains values based on the key. It implements the NavigableMap interface and extends AbstractMap class."
         },
         {
           "term": "PriorityQueue",
-          "meaning": ""
+          "meaning": "The Priority Queue class is part of Java's collections framework and implements the Queue interface. In priority queue all the elements are ordered as per their natural ordering or based on a custom Comparator supplied at the time of creation. "
         }
     ],
     "associated_questions": [
       {
         "related_question": "Difference between <b>ArrayList</b> and <b>Vectors</b>?",
-        "related_answer": ""
+        "related_answer": "Vector doubles the size of its array when its size is increased. But, ArrayList increases by half of its size when its size is increased. Therefore as per Java API the only main difference is, Vector's methods are synchronized and ArrayList's methods are not synchronized. "
       },
       {
         "related_question": "Why is <b>insertion</b> and <b>deletion</b> in ArrayList slower compared to LinkedList?",
-        "related_answer": ""
+        "related_answer": "ArrayList is slower that LinkedList for deletion because it needs to copy part of the array in order to remove the slot that has become free. ArrayList is also slower that LinkedList for insertion because ArrayList internally uses an array to store the elements, when that array gets filled by inserting elements a new array of roughly 1.5 times the size of the original array is created and all the data of old array is copied to new array. "
       }
     ]
     },
       {
         "question": "What is Java <b>Exception Handling</b>?",
-        "answer": "",
+        "answer": "Exception hanling is a block of code is called create by java when an exception occurs. An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. whenever an error occurs while executing a statement, creates an exception object. The exception object contains a lot of debugging information such as method hierarchy, line number where the exception occurred, type of exception etc.",
         "associated_questions": [
           {
             "related_question": "What is the difference between <b>\"throw\"</b> and <b>\"throws\"</b> in Java Exception Handling?",
-            "related_answer": ""
+            "related_answer": "throw keyword is used to throw Exception from any method or static block whereas throws is used to indicate that which Exception can possibly be thrown by this method. "
           },
           {
             "related_question": "Is there ever a scenario where we can skip the finally block in a try catch?",
-            "related_answer": ""
+            "related_answer": "By Calling System.exit(0) in try or catch block, we can skip the finally block. System.exit(int) method can throw a SecurityException. If System.exit(0) exits the JVM without throwing that exception then finally block will not execute. But, if System.exit(0) does throw security exception then finally block will be executed."
           }
         ]
       },
       {
         "question": "What are <b>anonymous classes</b>?",
-        "answer": ""
+        "answer": "In Java, a class can contain another class known as nested class. It's possible to create a nested class without giving any name. A nested class that doesn't have any name is known as an anonymous class. An anonymous class must be defined inside another class. Hence, it is also known as an anonymous inner class."
       },
       {
         "question": "Why is the main method <b>static</b> in Java?",
-        "answer": ""
+        "answer": "The main() method, in Java, is the entry point for the JVM(Java Virtual Machine) into the java program. JVM launches the java program by invoking the main() method. Static is a keyword. The role of adding static before any entity is to make that entity a class entity."
       },
       {
         "question": "What is <b>garbage collector</b>? How does it work?",
-        "answer": ""
+        "answer": "In java, garbage means unreferenced objects. Garbage Collection is process of reclaiming the runtime unused memory automatically. In other words, it is a way to destroy the unused objects."
       },
       {
         "question": "Difference between <b>stack</b> and <b>heap</b> memory?",
-        "answer": ""
+        "answer": "Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer's RAM . Variables allocated on the stack are stored directly to the memory and access to this memory is very fast, and it's allocation is dealt with when the program is compiled."
       },
       {
         "question": "What is <b>Inheritance</b>?",
-        "answer": "",
+        "answer": "Inheritance is the process by which objects of one class acquire the properties & objects of another class. TThe idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class.",
         "associated_questions": [
           {
             "related_question": "Does Java support multiple inheritance?",
-            "related_answer": ""
+            "related_answer": "No java doesn't support multiple inheritance directly because it leads to overriding of methods when both extended class have a same method name. While java does not support multiple inheritances through classes, we can use multiple inheritances ."
           }
         ]
       },
       {
         "question": "What is <b>Polymorphism</b>?",
-        "answer": "",
+        "answer": "Polymorphism is when an object takes on multiple forms. For instance, String is a subclass of Object class. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object. ",
         "terminologies": [
           {
             "term": "Compile time polymorphism",
-            "meaning": ""
+            "meaning": "Compile time polymorphism or static method dispatch is a process in which a call to an overloading method is resolved at compile time rather than at run time. "
           },
           {
             "term": "Run time polymorphism",
-            "meaning": ""
+            "meaning": "Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time."
           }
         ]
       },
       {
         "question": "What is the difference between <b>Method overloading</b> and <b>Method overriding</b>?",
-        "answer": ""
+        "answer": "Overloading occurs when two or more methods in one class have the same method name but different parameters. Overriding means having two methods with the same method name and parameters (i.e., method signature). One of the methods is in the parent class and the other is in the child class."
       },
       {
         "question": "Why would you not call abstract method in constructor?",
-        "answer": ""
+        "answer": "The problem is that the class is not yet fully initialised, and when the method is called in a subclass, it may cause trouble."
       },
       {
         "question": "<b>Composition</b> over <b>inheritance</b>?",
-        "answer": ""
+        "answer": "Composition is typically “has a” or “uses a” relationship. In the below example, the Employee class has a Person. It does not inherit from Person but instead gets the Person object passed to it, which is why it is a “has a” Person."
       },
       {
         "question": "<b>Constructors</b> vs <b>Methods</b>?",
-        "answer": ""
+        "answer": "Constructors must have the name as the class name and does not have a return type. It can be used to instantiate any objects in the class whereas methods have no such rule and is another member of the class. Constructors cannot be inherited but a derived class can call the super constructor of parent class. Instance methods on the other hand require an instance of the class to exist before they can be called, so an instance of a class needs to be created by using the new keyword. Class methods are methods which are declared as static. The method can be called without creating an instance of the class."
       },
       {
         "question": "What is the difference between <b>instantiation</b> and <b>initialisation</b> of an object?",
-        "answer": ""
+        "answer": "<b>Initialisation</b> is the process of the memory allocation, when a new variable is created. Variables should be explicitly given a value, otherwise they may contain a random value that remained from the previous variable that was using the same memory space. To avoid this problem, Java language assigns default values to data types.<br/>
+        <b>Instantiation</b> is the process of explicitly assigning definitive value to a declared variable."
       },
       {
         "question": "Do objects get passed by <b>reference</b> or <b>value</b> in Java?",
-        "answer": "",
+        "answer": "Java is always pass-by-value. When we pass the value of an object, we are passing the reference to it.",
         "terminologies": [
           {
             "term": "pass by reference",
-            "meaning": ""
+            "meaning": "An alias or reference to the actual parameter is passed to the method, that's why it's called pass by reference."
           },
           {
             "term": "pass by value",
-            "meaning": ""
+            "meaning": "The method parameter values are copied to another variable and then the copied object is passed, that's why it's called pass by value."
           }
         ]
       },
       {
         "question": "Primitives in Java?",
-        "answer": ""
+        "answer": "Primitive types are the most basic data types available within the Java language. There are 8: boolean, byte, char, short, int, long, float and double . These types serve as the building blocks of data manipulation in Java. Such types serve only one purpose — containing pure, simple values of a kind. String is not a primitive type"
       },
       {
         "question": "Difference between <b>\"== \"</b> and <b>\".equals()\"</b> method in Java?",
-        "answer": ""
+        "answer": " == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects."
       },
       {
         "question": "Why are Strings <b>immutable</b>?",
-        "answer": ""
+        "answer": "Once a value is assigned to a string it cannot be changed. And if changed, it creates a new object of the String. "
       },
       {
         "question": "What is <b>String.intern()</b>? When and why should it be used?",
-        "answer": ""
+        "answer": "String.intern() method can be used to to deal with String duplication problem in Java. By carefully using the intern() method you can save a lot of memories consumed by duplicate String instances. A string is duplicate if it contains the same content as another string but occupied different memory location."
       },
       {
         "question": "WHat is <b>String pool</b> in Java?",
-        "answer": ""
+        "answer": "String Pool in java is a pool of Strings stored in Java Heap Memory. When we use double quotes to create a String, it first looks for String with same value in the String pool, if found it just returns the reference else it creates a new String in the pool and then returns the reference. However using new operator, we force String class to create a new String object in heap space. We can use intern() method to put it into the pool or refer to other String object from string pool having same value."
       },
       {
         "question": "What are <b>static variables</b>?",
-        "answer": ""
+        "answer": "Variables that have only one copy per class are known as static variables. They are not attached to a particular instance of a class but rather belong to a class as a whole. A static variable is associated with the class as a whole rather than with specific instances of a class. Non-static variables take on unique values with each object instance."
       },
       {
         "question": "What does the <b>final modifier</b> do?",
-        "answer": "",
+        "answer": "once declared cannot be modified. A blank final variable in Java is a final variable that is not initialised during declaration.",
         "terminologies": [
           {
-            "term": "fianl classes",
-            "meaning": ""
+            "term": "final classes",
+            "meaning": "A final class cannot have subclasses."
           },
           {
             "term": "final variables",
-            "meaning": ""
+            "meaning": "A final variable cannot be changed once it is initialised."
           },
           {
             "term": "final methods",
-            "meaning": ""
+            "meaning": "A final method cannot be overridden by subclasses"
           }
         ]
       },
       {
         "question": "Difference between <b>stacks</b> and <b>queues</b>?",
-        "answer": ""
+        "answer": "<ul>
+                  <li>Working principle for stack is LIFO(Last in First out), while queue is FIFO(First in First out).</li>
+                  <li>The structure for Stack the same end is used to insert and delete elements, while queue uses one end for insertionand another end for deletion.</li>
+                  <li>Numbers of pointers used in stack is one, while queue uses two.</li>
+                  <li>operations perform in stack are <b>Push</b> and <b>Pop</b>, while queue uses <b>Enqueue</b> and <b>dequeue</b></li>
+                  <li>Implemetation for stack is simpler while queue is more complex</li>
+                  </ul>"
       },
       {
         "question": "What is a <b>deadlock</b> in Java?",
-        "answer": ""
+        "answer": "A deadlock occurs when a thread enters a waiting state because a requested system resource is held by another waiting process, which in turn is waiting for another resource held by another waiting process."
       },
       {
         "question": "Difference between <b>Enumeration</b> and <b>Iterators</b>?",
-        "answer": ""
+        "answer": "<ul>
+                  <li>Enumeration does not include remove() method whereas iterators do. Enumerators act as read only interface as it provides methods to read and traverse through a collection.</li>
+                    <li>ListIterator: is just like an iterator except it allows access to the collection in either the forward or backward direction</li>
+                  </ul>"
       },
       {
         "question": "What are <b>Generics</> in Java?",
-        "answer": "",
+        "answer": "Generics are a language feature designed to extend Java's type system to allow a type or method to operate on objects of various types while providing compile-time type safety",
         "terminologies": [
           {
             "term": "Type-safety",
-            "meaning": ""
+            "meaning": "We can hold only a single type of objects in generics. It doesn’t allow to store other objects. "
           },
           {
             "term": "Type casting is not required",
-            "meaning": ""
+            "meaning": "There is no need to typecast the object"
           },
           {
             "term": "Compile time checking",
-            "meaning": ""
+            "meaning": " It is checked at compile time so problem will not occur at runtime. The good programming strategy says it is far better to handle the problem at compile time than runtime."
           }
         ],
       }
