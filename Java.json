@@ -25,11 +25,7 @@
       "associated_questions": [
         {
           "related_question": "Difference between <b>Encapsulation</b> and <b>Abstraction</b>?",
-          "related_answer": "<ul>
-          <li>Abstraction focuses on the outside view of an object (i.e. the interface)</li>
-          <li>Encapsulation (information hiding) prevents clients from seeing it’s inside view.</li>
-          <li>Abstraction solves the problem in the design side while Encapsulation is the Implementation.</li>
-          </ul>"
+          "related_answer": "<ul><li>Abstraction focuses on the outside view of an object (i.e. the interface)</li><li>Encapsulation (information hiding) prevents clients from seeing it’s inside view.</li><li>Abstraction solves the problem in the design side while Encapsulation is the Implementation.</li></ul>"
         }
       ]
     },
@@ -59,14 +55,7 @@
       "associated_questions": [
         {
           "related_question": "What is the difference between <b>Abstract class</b> and <b>Interface</b>?",
-          "related_answer": "The main difference between an <b>Abstract class</b> and <b>Interface</b> is the methods of a Java interface are implicitly abstract and cannot have implementations. A java abstract class can have instance methods that implements a default behaviour. Also:
-            <ul>
-              <li>Variables declared in a Java interface is by default final. An  abstract class may contain non-final variables.</li>
-              <li>Members of a Java interface are public by default. A Java abstract class can have the usual flavors of class members like private, protected, etc..</li>
-              <li>Java interface should be implemented using keyword “implements”; A Java abstract class should be extended using keyword “extends”.</li>
-              <li>An interface can extend another Java interface only, an abstract class can extend another Java class and implement multiple Java interfaces.</li>
-            </ul>
-          "
+          "related_answer": "The main difference between an <b>Abstract class</b> and <b>Interface</b> is the methods of a Java interface are implicitly abstract and cannot have implementations. A java abstract class can have instance methods that implements a default behaviour. Also:<ul><li>Variables declared in a Java interface is by default final. An  abstract class may contain non-final variables.</li><li>Members of a Java interface are public by default. A Java abstract class can have the usual flavors of class members like private, protected, etc..</li><li>Java interface should be implemented using keyword “implements”; A Java abstract class should be extended using keyword “extends”.</li><li>An interface can extend another Java interface only, an abstract class can extend another Java class and implement multiple Java interfaces.</li></ul>"
         },
         {
           "related_question": "When you would use <b>abstract class</b> and <b>interfaces</b>? Example?",
@@ -190,8 +179,7 @@
       },
       {
         "question": "What is the difference between <b>instantiation</b> and <b>initialisation</b> of an object?",
-        "answer": "<b>Initialisation</b> is the process of the memory allocation, when a new variable is created. Variables should be explicitly given a value, otherwise they may contain a random value that remained from the previous variable that was using the same memory space. To avoid this problem, Java language assigns default values to data types.<br/>
-        <b>Instantiation</b> is the process of explicitly assigning definitive value to a declared variable."
+        "answer": "<b>Initialisation</b> is the process of the memory allocation, when a new variable is created. Variables should be explicitly given a value, otherwise they may contain a random value that remained from the previous variable that was using the same memory space. To avoid this problem, Java language assigns default values to data types.<br/><b>Instantiation</b> is the process of explicitly assigning definitive value to a declared variable."
       },
       {
         "question": "Do objects get passed by <b>reference</b> or <b>value</b> in Java?",
@@ -251,13 +239,7 @@
       },
       {
         "question": "Difference between <b>stacks</b> and <b>queues</b>?",
-        "answer": "<ul>
-                  <li>Working principle for stack is LIFO(Last in First out), while queue is FIFO(First in First out).</li>
-                  <li>The structure for Stack the same end is used to insert and delete elements, while queue uses one end for insertionand another end for deletion.</li>
-                  <li>Numbers of pointers used in stack is one, while queue uses two.</li>
-                  <li>operations perform in stack are <b>Push</b> and <b>Pop</b>, while queue uses <b>Enqueue</b> and <b>dequeue</b></li>
-                  <li>Implemetation for stack is simpler while queue is more complex</li>
-                  </ul>"
+        "answer": "<ul><li>Working principle for stack is LIFO(Last in First out), while queue is FIFO(First in First out).</li><li>The structure for Stack the same end is used to insert and delete elements, while queue uses one end for insertionand another end for deletion.</li><li>Numbers of pointers used in stack is one, while queue uses two.</li><li>operations perform in stack are <b>Push</b> and <b>Pop</b>, while queue uses <b>Enqueue</b> and <b>dequeue</b></li><li>Implemetation for stack is simpler while queue is more complex</li></ul>"
       },
       {
         "question": "What is a <b>deadlock</b> in Java?",
@@ -265,9 +247,7 @@
       },
       {
         "question": "Difference between <b>Enumeration</b> and <b>Iterators</b>?",
-        "answer": "<ul>
-                  <li>Enumeration does not include remove() method whereas iterators do. Enumerators act as read only interface as it provides methods to read and traverse through a collection.</li>
-                    <li>ListIterator: is just like an iterator except it allows access to the collection in either the forward or backward direction</li>
+        "answer": "<ul><li>Enumeration does not include remove() method whereas iterators do. Enumerators act as read only interface as it provides methods to read and traverse through a collection.</li><li>ListIterator: is just like an iterator except it allows access to the collection in either the forward or backward direction</li>
                   </ul>"
       },
       {
