@@ -286,7 +286,7 @@
             "term": "Compile time checking",
             "meaning": " It is checked at compile time so problem will not occur at runtime. The good programming strategy says it is far better to handle the problem at compile time than runtime."
           }
-        ],
+        ]
       }
   ]
 }
